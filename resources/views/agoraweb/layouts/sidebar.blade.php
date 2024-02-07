@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -90,10 +89,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col py-3">
-                Content area...
-            </div>
+            </div> 
         </div>
     </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
