@@ -1,1 +1,5 @@
-<h1>Compra</h1>
+@extends('agoraweb.layouts.layout')
+@section('title', 'Padarias')
+@section('content')
+
+@endsection
