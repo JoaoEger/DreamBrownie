@@ -1,12 +1,32 @@
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 .navfix{
   padding: 0px;
   margin: 0px;
   text-align: center;
 }
 
-.navbackground{
-  background-color: $yellow-100;
+.red{
+  background-color: $red-200;
 }
-.colornav{
-  color: $teal-700;
+
+.footer{
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+.container-fluid{
+  .navbar-brand{
+    margin: 0;
+    padding: 0 10px 0 0;
+  }
+}
+
+.navbar{
+  --bs-navbar-padding-y: 0.2rem;
 }
