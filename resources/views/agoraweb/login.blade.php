@@ -1,4 +1,4 @@
-@extends('agoraweb.layouts.layout')
+@extends('layouts.agoraweb.layout')
 @section('title', 'Padarias')
 @section('content')
 

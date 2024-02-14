@@ -22,9 +22,9 @@ use Illuminate\Validation\Rules\Can;
 */
 
 Route::get('/', [HomeController::class, 'home']);
+Route::get('/home', [HomeController::class, 'home']);
 Route::get('/cadastro', [CadastroController::class, 'cadastro']);
 Route::get('/login', [LoginController::class, 'login']);
-Route::get('/home', [HomeController::class, 'home']);
 Route::get('/padarias', [PadariaController::class, 'padarias']);
 Route::get('/produtos', [ProdutosController::class, 'produtos']);
 Route::get('/pagamento', [PagamentoController::class, 'pagamento']);

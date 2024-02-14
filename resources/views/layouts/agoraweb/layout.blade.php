@@ -14,11 +14,11 @@
 
 <body>
     
-        @include('agoraweb.layouts.navbar')
+        @include('layouts.agoraweb.navbar')
     <main class="container p-4">
             @yield('content')
     </main>
-        @include('agoraweb.layouts.footer')
+        @include('layouts.agoraweb.footer')
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
         integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="

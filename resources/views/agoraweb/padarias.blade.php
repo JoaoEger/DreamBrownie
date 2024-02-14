@@ -1,8 +1,8 @@
-@extends('agoraweb.layouts.layout')
+@extends('layouts.agoraweb.layout')
 @section('title', 'Padarias')
 @section('content')
-    <div class="row">
-        <div class="col-12">
+    <div class="row mt-4">
+        <div class="col-12 text-center">
             <h1>Padarias</h1><br>
         </div>
     </div>
