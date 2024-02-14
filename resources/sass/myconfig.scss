@@ -2,6 +2,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-color: #ADC096 !important;
 
       main {
           flex: 1 0 auto;
@@ -11,6 +12,8 @@ body {
         width: 100%;
         position: relative;
         bottom: 0;
+        border-bottom: 1px solid;
+        border-color: green;
       }
 }
 
@@ -39,4 +42,21 @@ body {
     .card-body {
         min-height: 150px;
     }
+}
+
+.bg-cor{
+    background-color: #FFFDD7 !important;
+}
+
+.txt-cor{
+    color: #8D5F2E !important;
+}
+
+input::placeholder{
+    color: #8D5F2E !important;
+}
+
+.border-brown{
+    border: 1px;
+    border-color: #8D5F2E !important;
 }

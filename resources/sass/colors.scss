@@ -8,7 +8,7 @@ $custom-theme : (
   "orange" : #f60f60,
   "chief" : #cf2b30,
   "verdeBosta" : #8db10b,
-  "primary" : $red-700
+  "primary" : $red-700 
 );
 
 $theme-colors : map-merge($theme-colors, $custom-theme);
