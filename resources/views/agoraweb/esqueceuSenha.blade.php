@@ -21,14 +21,9 @@
                         <label for="">Email</label>
                         <input type="email" class="form-control" placeholder="Insira seu email aqui">
                     </div>
-                    <div class="senha alinhainput col-md-9">
-                        <label for="">Senha</label>
-                        <input type="password" class="form-control" placeholder="Insira seu senha aqui">
-                    </div>
                     <div class="alinhalink botao col-md-9">
                         <ul>
-                            <li><a href="/home">Entrar</a></li>
-                            <li><a href="/esqueceuenha">Esqueceu a senha?</a></li>
+                            <li><a href="#">Enviar email</a></li>
                             <li><a href="/cadastro">Cadastrar-se</a></li>
                         </ul>
                     </div>
