@@ -3,6 +3,9 @@ body{
   min-height: 100vh;
   flex-direction: column;
 }
+main{
+  flex: 1 0 auto;
+}
 
 .navfix{
   padding: 0px;
@@ -10,20 +13,11 @@ body{
   text-align: center;
 }
 
-.red{
-  background-color: $red-200;
-}
-
-.footer{
-  width: 100%;
-  position: relative;
-  bottom: 0;
-}
-
 .container-fluid{
   .navbar-brand{
     margin: 0;
     padding: 0 10px 0 0;
+    min-height: 50px;
   }
 }
 
