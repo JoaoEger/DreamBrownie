@@ -1,15 +1,29 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary navfix">
-    <div class="container-fluid red">
-      <a class="navbar-brand" href="home"><img src="logoSemFundo.png" alt="Nao foi Possivel carregar a imagem" height="85" width="65"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link colornav" aria-current="page" href="home">Home</a>
-          <a class="nav-link colornav" href="padarias">Padarias</a>
-          <a class="nav-link colornav" href="account">Conta</a>
+<nav class="navbar navbar-expand-lg bg-warning">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><a class="navbar-brand" href="home"><img src="logoSemFundo.png"
+                    alt="Nao foi Possivel carregar a imagem" height="75" width="65"></a></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/quem-somos">Quem somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/artigos">Artigos</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar artigos" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
         </div>
-      </div>
     </div>
-  </nav>
+</nav>
+
+{{-- divisao --}}
