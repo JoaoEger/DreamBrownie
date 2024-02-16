@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\CadastroController;
 use App\Http\Controllers\CompraFinalizadaController;
 use App\Http\Controllers\HomeController;
@@ -30,3 +31,10 @@ Route::get('/padarias/{id}/{permalink}', [PadariaController::class, 'padarias'])
 Route::get('/produtos', [ProdutosController::class, 'produtos']);
 Route::get('/pagamento', [PagamentoController::class, 'pagamento']);
 Route::get('/compraFinalizada', [CompraFinalizadaController::class, 'compraFinalizada']);
+
+
+//Painel de admin
+Route::view("/admin/login", "admin.login.form")->name("login.form");
+Route::post("/admin/auth", "App\Http\Controllers\admin\LoginController@auth")->name("login.auth");
+Route::get("/admin/logout", "App\Http\Controllers\admin\LoginController@logout");
+Route::get("/admin", [DashboardController::class, "index"])->middleware("validaLogin");
