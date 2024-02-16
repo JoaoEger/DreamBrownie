@@ -10,26 +10,26 @@
 </head>
 <body>
     <div class="row container-fluid">
-        <div class="col-sm-12 col-md-4 bg-danger base">
-            <h1 class="titulo">Conecte ao ÀgoraWeb</h1>
+        <div class="col-sm-12 col-md-4 bg-cor base">
+            <h1 class="titulo txt-cor">Conecte ao ÀgoraWeb</h1>
             <div>
                 <img src="logoSemFundo.png" class="login-img mx-auto d-block img-fluid" alt="Não foi possível carregar a imagem">
             </div>
             <div >
                 <form action="">
                     <div class="email alinhainput col-md-9">
-                        <label for="">Email</label>
+                        <label for=""class="txt-cor">Email</label>
                         <input type="email" class="form-control" placeholder="Insira seu email aqui">
                     </div>
                     <div class="senha alinhainput col-md-9">
-                        <label for="">Senha</label>
+                        <label for=""class="txt-cor">Senha</label>
                         <input type="password" class="form-control" placeholder="Insira seu senha aqui">
                     </div>
                     <div class="alinhalink botao col-md-9">
                         <ul>
-                            <li><a href="/home">Entrar</a></li>
-                            <li><a href="/esqueceuenha">Esqueceu a senha?</a></li>
-                            <li><a href="/cadastro">Cadastrar-se</a></li>
+                            <li class="bg-botao"><a href="/home">Entrar</a></li>
+                            <li class="bg-botao"><a href="/esqueceuSenha">Esqueceu a senha?</a></li>
+                            <li class="bg-botao"><a href="/cadastro">Cadastrar-se</a></li>
                         </ul>
                     </div>
                     <div class="alinhalink">

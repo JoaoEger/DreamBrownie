@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg bg-cor">
-    <div class="container-fluid">g
+    <div class="container-fluid">
         <a class="navbar-brand" href="/home"><a class="navbar-brand" href="home"><img src="logoSemFundo.png"
                     alt="Nao foi Possivel carregar a imagem" height="75" width="65"></a></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"

@@ -27,12 +27,11 @@
   
   ul li a:hover{
     list-style: none;
-    background: red;
+    background: #83946e;
     border-radius: 7px;
   }
   
   .botao li{
-    background: green;
     width: 23vw;
     height: 30px;
     line-height: 30px;
@@ -65,4 +64,8 @@
 .oi{
     margin: -12px;
     margin-right: -36px;
+}
+
+.bg-botao{
+    background-color: #ADC096;
 }
