@@ -21,8 +21,8 @@
                     <a class="nav-link txt-cor " href="/cadastro">Cadastro</a>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2 border-brown" type="search" placeholder="Buscar produtos" aria-label="Search">
+            <form class="d-flex" role="search" method="GET" action="/produtos">
+                <input class="form-control me-2 border-brown bg-cor" type="search" placeholder="Buscar produtos" aria-label="Search">
                 <button class="btn border-brown txt-cor" type="submit">Buscar</button>
             </form>
         </div>
