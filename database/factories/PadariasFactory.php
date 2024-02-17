@@ -18,8 +18,10 @@ class PadariasFactory extends Factory
     {
         return [
             "nome" => $this->faker->unique()->text(40),
+            "descricao" => $this->faker->text(200),
             "endereco" => $this->faker->unique()->text(30),
             "telefone" => $this->faker->unique()->text(9),
+            "imagem" => $this->faker->image(),
             "from_cidades" => rand(1,10),
             "date" => date("Y-m-d h:i:s")
         ];

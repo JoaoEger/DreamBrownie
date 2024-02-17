@@ -21,6 +21,7 @@ class UsuariosFactory extends Factory
             "email" => $this->faker->unique()->text(30),
             "senha" => $this->faker->text(9),
             "endereco" => $this->faker->text(12),
+            "imagem" => $this->faker->image(),
             "date" => date("Y-m-d h:i:s")
         ];
     }
