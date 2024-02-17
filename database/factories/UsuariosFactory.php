@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Usuario>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Usuarios>
  */
-class UsuarioFactory extends Factory
+class UsuariosFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -21,6 +21,7 @@ class UsuarioFactory extends Factory
             "email" => $this->faker->unique()->text(30),
             "senha" => $this->faker->text(9),
             "endereco" => $this->faker->text(12),
+            "date" => date("Y-m-d h:i:s")
         ];
     }
 }

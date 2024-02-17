@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('cidade', function (Blueprint $table) {
-            $table->unsignedBigInteger("from_usuario");
-            $table->foreign("from_usuario")
+        Schema::table('cidades', function (Blueprint $table) {
+            $table->unsignedBigInteger("from_usuarios");
+            $table->foreign("from_usuarios")
                 ->references("id")
-                    ->on("usuario")
+                    ->on("usuarios")
                         ->onUpdate("cascade")
-                            ->onDelete("restrict");
+                            ->onDelete("cascade");
         });
     }
 
@@ -26,8 +26,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('cidade', function (Blueprint $table) {
-            //
+        Schema::table('cidades', function (Blueprint $table) {
+            $table->dropColumn("from_usuarios");
         });
     }
 };
