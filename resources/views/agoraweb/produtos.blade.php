@@ -1,6 +1,10 @@
 @extends('layouts.agoraweb.layout')
 @section('title', 'Produtos')
 @section('content')
-    <h1>Bem vindo a Pagina produtos (Famosa products)</h1>
-    <p>Descrubra as opcoes em nosso site!</p>
+@foreach($padaria as $p)
+<p>{{$p->nome}}</p>
+@foreach ($produto as $produt)
+    <p>{{$produt->from_padarias}}</p>
+@endforeach
+@endforeach
 @endsection

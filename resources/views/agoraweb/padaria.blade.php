@@ -1,6 +1,6 @@
 @extends("layouts.agoraweb.layout")
 @section("title", "Página da Padaria")
-@section('content')
+@section("content")
 <div class="row mt-4">
     <div class="col-12 text-center">
         <h1>Produtos</h1><br>
@@ -12,7 +12,7 @@
         <div class="card mb-3 bg-verde border-brown">
             <div class="row g-0 ">
                 <div class="col-md-2">
-                    <img src="{{$p->image}}" height="130vh" alt="...">
+                    <img src="{{$p->image}}" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-9">
                     <div class="card-produto" >
@@ -29,4 +29,4 @@
     </div>
     @endforeach
 </div>
-@endsection
+@endsection 

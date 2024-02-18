@@ -29,7 +29,7 @@ Route::get('/home', [HomeController::class, 'home']);
 Route::get('/cadastro', [CadastroController::class, 'cadastro']);
 Route::get('/login', [LoginController::class, 'login']);
 Route::get('/padarias', [PadariaController::class, 'padarias']);
-Route::get('/padarias/{id}/{permalink}', [PadariaController::class, 'padaria']);
+Route::get('/padarias/{id}{permalink}', [PadariaController::class, 'padaria']);
 Route::get('/produtos', [ProdutosController::class, 'produtos']);
 Route::get('/pagamento', [PagamentoController::class, 'pagamento']);
 Route::get('/compraFinalizada', [CompraFinalizadaController::class, 'compraFinalizada']);

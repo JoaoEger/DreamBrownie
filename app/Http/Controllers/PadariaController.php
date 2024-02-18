@@ -9,7 +9,9 @@ use Illuminate\Http\Request;
 class PadariaController extends Controller
 {
     public function padarias(){
-        return view("/agoraweb/padarias");
+        return view("/agoraweb/padarias", [
+            "padaria" => Padarias::orderBy("nome", "asc")->limit(12)->get()
+        ]);
     }
 
     public function padaria(){
