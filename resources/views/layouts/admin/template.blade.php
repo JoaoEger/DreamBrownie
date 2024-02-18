@@ -11,8 +11,7 @@
     <title>@yield("title")</title>
 </head>
 <body>
-    @include("layouts.admin.navbar")
-    <main class="container p-4">
+    <main>
         @yield("content")
     </main>
 
