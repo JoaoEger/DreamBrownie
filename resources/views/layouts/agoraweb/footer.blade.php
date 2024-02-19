@@ -8,6 +8,7 @@
               <ul class="list-inline">
                   <li class="list-inline-item"><a class="txt-cor" href="/termos">Termos de Serviço</a></li>
                   <li class="list-inline-item"><a class="txt-cor" href="/politica-de-privacidade">Política de Privacidade</a></li>
+                  <li class="list-inline-item"><a class="txt-cor" href="/quemsomos">Quem Somos?</a></li>
               </ul>
           </div>
       </div>
