@@ -18,18 +18,13 @@
             <div >
                 <form action="">
                     <div class="email alinhainput col-md-9">
-                        <label for=""class="txt-cor">Email</label>
+                        <label for="" class="txt-cor">Email</label>
                         <input type="email" class="form-control" placeholder="Insira seu email aqui">
-                    </div>
-                    <div class="senha alinhainput col-md-9">
-                        <label for=""class="txt-cor">Senha</label>
-                        <input type="password" class="form-control" placeholder="Insira seu senha aqui">
                     </div>
                     <div class="alinhalink botao col-md-9">
                         <ul>
-                            <li class="bg-botao"><a href="/home">Entrar</a></li>
-                            <li class="bg-botao"><a href="/esqueceuSenha">Esqueceu a senha?</a></li>
-                            <li class="bg-botao"><a href="/cadastro">Cadastrar-se</a></li>
+                            <li class="bg-botao txt-cor"><a href="#">Enviar email</a></li>
+                            <li class="bg-botao txt-cor"><a href="/cadastro">Cadastrar-se</a></li>
                         </ul>
                     </div>
                     <div class="alinhalink">
@@ -42,13 +37,13 @@
             <div id="carouselExampleAutoplaying" class="carousel slide oi" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="fita.jpeg" class="d-block w-100" alt="">
+                    <img src="logoAgora.jpeg" class="d-block w-100" alt="">
                 </div>
                   <div class="carousel-item">
-                    <img src="foto.jpeg" class="d-block w-100" alt="">
+                    <img src="logoAgora.jpeg" class="d-block w-100" alt="">
                   </div>
                   <div class="carousel-item">
-                    <img src="imagem.jpeg" class="d-block w-100" alt="">
+                    <img src="logoAgora.jpeg" class="d-block w-100" alt="">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">

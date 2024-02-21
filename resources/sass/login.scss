@@ -1,0 +1,72 @@
+.titulo{
+    text-align: center;
+  }
+  
+  .alinhalink{
+    .qmsomos{
+      font-size: 15px;
+      display:block;  
+    }
+    text-align:center;
+    display: block;
+  }
+  
+  //estilizaçao dos botoes de cadastro e esqueceu a senha
+  .login-img{
+    max-height:40vh ;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  ul li a:hover{
+    list-style: none;
+    background: #83946e;
+    border-radius: 7px;
+  }
+  
+  .botao li{
+    width: 23vw;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 7px;
+    margin-bottom: 2vh;
+    margin-left: 25px;
+  }
+  
+  .botao li a{
+    display: block;
+  }
+  //alinhamento do input
+  .alinhainput{
+    margin-left: 55px;
+    margin-bottom: 3vh;
+  }
+  label{
+    display: block;
+    text-align: left;
+  }
+  .base{
+    min-height: 100vh;
+  }
+  .btn{
+    min-width: 11.5vw;
+  }
+
+.oi{
+    margin: 0 -36px 0 -12px;
+    margin-right: -36px;
+    margin-top: 15px;
+}
+
+.bg-botao{
+    background-color: #ADC096;
+}

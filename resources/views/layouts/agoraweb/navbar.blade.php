@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg bg-cor">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/home"><a class="navbar-brand" href="home"><img src="logoSemFundo.png"
-                    alt="Nao foi Possivel carregar a imagem" height="75" width="65"></a></a>
+        <a class="navbar-brand" href="/home"><img src="{{asset("logoSemFundo.png")}}" 
+            alt="Nao foi Possivel carregar a imagem" height="75" width="65"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,7 +21,7 @@
                     <a class="nav-link txt-cor " href="/cadastro">Cadastro</a>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
+            <form class="d-flex" role="search" method="GET" action="/produtos">
                 <input class="form-control me-2 border-brown bg-cor" type="search" placeholder="Buscar produtos" aria-label="Search">
                 <button class="btn border-brown txt-cor" type="submit">Buscar</button>
             </form>
