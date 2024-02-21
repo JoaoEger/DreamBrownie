@@ -12,10 +12,10 @@
                     <a class="nav-link active txt-cor" aria-current="page" href="/admin">Painel administração</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link txt-cor txt-cor" href="/admin/banners">Banners</a>
+                    <a class="nav-link txt-cor txt-cor" href="/admin/banners">Sua padaria</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link txt-cor" href="/admin/artigos">Artigos</a>
+                    <a class="nav-link txt-cor" href="/admin/artigos">Produtos</a>
                 </li>
             </ul>
             {{-- @if (Auth::user()) --}}
