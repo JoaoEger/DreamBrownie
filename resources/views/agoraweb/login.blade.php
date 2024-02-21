@@ -40,9 +40,9 @@
         </div>
         <div class="col-sm-12 col-md-8">
             <div id="carouselExampleAutoplaying" class="carousel slide oi" data-bs-ride="carousel">
-                <div class="carousel-inner">
+                <div class="carousel-inner" style="">
                   <div class="carousel-item active">
-                    <img src="fita.jpeg" class="d-block w-100" alt="">
+                    <img src="fita2.png" class="d-block w-100" alt="">
                 </div>
                   <div class="carousel-item">
                     <img src="foto.jpeg" class="d-block w-100" alt="">

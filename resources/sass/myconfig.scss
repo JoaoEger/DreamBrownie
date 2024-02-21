@@ -34,10 +34,10 @@ body {
 }
 .card {
     background-color: #ADC096 !important;
-    .card-action {
-        padding: 0 20px 10px 20px; // t = TOP, r = RIGHT, b = BOTTOM, l = LEFT
+    .card-action { // t = TOP, r = RIGHT, b = BOTTOM, l = LEFT
         display: flex;
         justify-content: space-between;
+
 
     }
     .card-body {
