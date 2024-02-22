@@ -25,11 +25,11 @@
                         <label for=""class="txt-cor">Senha</label>
                         <input type="password" class="form-control" placeholder="Insira seu senha aqui">
                     </div>
-                    <div class="alinhalink botao col-md-9">
-                        <ul>
-                            <li class="bg-botao"><a href="/home">Entrar</a></li>
-                            <li class="bg-botao"><a href="/esqueceuSenha">Esqueceu a senha?</a></li>
-                            <li class="bg-botao"><a href="/cadastro">Cadastrar-se</a></li>
+                    <div class="alinhalink col-md-9 ">
+                        <ul class="">
+                            <li><a class="btn border border-2 border-green btn-login" href="/home">Entrar</a></li>
+                            <li><a class="btn border border-2 border-green btn-login" href="/esqueceuSenha">Esqueceu a senha?</a></li>
+                            <li><a class="btn border border-2 border-green btn-login" href="/cadastro">Cadastrar-se</a></li>
                         </ul>
                     </div>
                     <div class="alinhalink">

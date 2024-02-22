@@ -2,11 +2,11 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-color: #ADC096 !important;
+    background-color: #e0f1d0!important;
 
     main {
         flex: 1 0 auto;
-        background-color: #ADC096 !important;
+        background-color: #e0f1d0;
     }
 
     .footer{
@@ -17,11 +17,7 @@ body {
         border-color: green;
     }
 }
-.navfix {
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-}
+
 .container-fluid {
     .navbar-brand {
         margin: 0;
@@ -29,16 +25,14 @@ body {
         min-height: 50px;
     }
 }
-.navbar {
+/* .navbar {
     --bs-navbar-padding-y: 0.2rem;
-}
+} */
 .card {
     background-color: #ADC096 !important;
-    .row{ 
-        background-color: rgb(13, 109, 56);
-    }
+    
     .card-action {
-        padding: 0 20px 10px 20px; // t = TOP, r = RIGHT, b = BOTTOM, l = LEFT
+        padding: 0 20px 0px 20px; // t = TOP, r = RIGHT, b = BOTTOM, l = LEFT
         display: flex;
         justify-content: space-between;
 
@@ -53,6 +47,9 @@ body {
 .bg-cor{
     background-color: #FFFDD7 !important;
 }
+.bg-verde{ 
+    background-color: rgb(13, 109, 56);
+}
 
 .txt-cor{
     color: #8D5F2E !important;
@@ -63,7 +60,7 @@ input::placeholder{
 }
 
 .border-brown{
-    border: 5px;
+    border: 8px;
     border-color: #8D5F2E !important;
 
 }

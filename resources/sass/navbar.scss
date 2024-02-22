@@ -1,0 +1,48 @@
+.navfix {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+.container-fluid {
+    .navbar-brand {
+        margin: 0;
+        padding: 0 10px 0 0;
+        min-height: 50px;
+    }
+}
+.navbar {
+    --bs-navbar-padding-y: 0.2rem;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul li a.nav-link{
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    width: 80px!important;
+    height: 80px;
+    padding: 0px!important;
+    margin: 0!important;
+    text-decoration: none;
+    color: black;
+}
+
+ul li a.btn-nav:hover{
+    background-color: #8D5F2E!important;
+    color: #FFFDD7!important;
+    transition-duration: 500ms;
+/*  list-style: none;
+    background: #bfbda1;
+    transition-duration: 500ms; */
+    // border-radius: 7px;
+}
+
+.btn-buscar-transition:hover{
+    background-color: #8D5F2E!important;
+    color: #FFFDD7!important;
+    transition-duration: 500ms;
+}
