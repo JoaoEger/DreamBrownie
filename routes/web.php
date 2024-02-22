@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\admin\AdmPadariaController;
+use App\Http\Controllers\admin\AdmProdutosController;
 use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\CadastroController;
 use App\Http\Controllers\CompraFinalizadaController;
@@ -42,4 +44,6 @@ Route::view("/admin/login", "admin.login.form")->name("login.form");
 Route::post("/admin/auth", "App\Http\Controllers\admin\LoginController@auth")->name("login.auth");
 Route::get("/admin/logout", "App\Http\Controllers\admin\LoginController@logout");
 Route::get("/admin", [DashboardController::class, "index"])->middleware("validaLogin");
+Route::get("/admin/padaria", [AdmPadariaController::class,"index"]);
+Route::get("/admin/produtos", [AdmProdutosController::class,"index"]);
 
