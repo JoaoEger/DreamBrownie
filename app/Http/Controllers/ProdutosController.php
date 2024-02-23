@@ -9,9 +9,19 @@ use Illuminate\Http\Request;
 class ProdutosController extends Controller
 {
     public function produtos(){
+        $search = request("search");
+        if($search){
+            $produtos = Produtos::where([
+                ["nome", "like", "%{$search}%"]
+            ])->paginate(100);
+        }else{
+            $produtos = Produtos::paginate(10);
+        };
+
         return view("/agoraweb/produtos", [
-            "produto" => Produtos::all(),
-            "padaria" => Padarias::all()
+            "produto" => $produtos,
+            "padaria" => Padarias::all(),
+            "search"=> $search
         ]);
         
     }

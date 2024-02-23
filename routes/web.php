@@ -3,6 +3,8 @@
 use App\Http\Controllers\admin\AdmPadariaController;
 use App\Http\Controllers\admin\AdmProdutosController;
 use App\Http\Controllers\admin\DashboardController;
+use App\Http\Controllers\admin\LoginController as AdminLoginController;
+use App\Http\Controllers\admin\ProdutosTesteAdmController;
 use App\Http\Controllers\CadastroController;
 use App\Http\Controllers\CompraFinalizadaController;
 use App\Http\Controllers\EsqueceuSenhaConntroller;
@@ -41,8 +43,16 @@ Route::view('/quemsomos', "agoraweb/quemSomos");
 
 //Painel de admin
 Route::view("/admin/login", "admin.login.form")->name("login.form");
-Route::post("/admin/auth", "App\Http\Controllers\admin\LoginController@auth")->name("login.auth");
-Route::get("/admin/logout", "App\Http\Controllers\admin\LoginController@logout");
-Route::get("/admin", [DashboardController::class, "index"])->middleware("validaLogin");
-Route::get("/admin/padaria", [AdmPadariaController::class, "index"]);
-Route::get("/admin/produtos", [AdmProdutosController::class, "index"]);
+Route::post("/admin/auth", [AdminLoginController::class, "auth"])->name("login.auth");
+
+//middleware-group
+Route::middleware("validaLogin")->group(function () {
+
+  Route::get("/admin", [DashboardController::class, "index"]);
+  Route::resource("/admin/produtosteste", ProdutosTesteAdmController::class);
+
+  Route::get("/admin/padaria", [AdmPadariaController::class, "index"]);
+  Route::get("/admin/produtos", [AdmProdutosController::class, "index"]);
+
+  Route::get("/admin/logout", [AdminLoginController::class, "logout"]);
+});

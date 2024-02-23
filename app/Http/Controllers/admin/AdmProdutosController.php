@@ -9,7 +9,11 @@ use Illuminate\Http\Request;
 
 class AdmProdutosController extends Controller
 {
-    public function index(){
-        return view("admin.produtos", ["produtos" => Produtos::all(), "padarias" => Padarias::all()]);
+    public function index()
+    {
+        return view("admin.produtos", [
+            "produtos" => Produtos::all(),
+            "padarias" => Padarias::select(["id", "nome"])->get()
+        ]);
     }
 }
