@@ -9,10 +9,11 @@ use Illuminate\Http\Request;
 
 class AdmPadariaController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         return view("admin.padaria", [
             "padaria" => Padarias::all(),
-            "cidades" => Cidades::select(["id","nome"])->get()
+            "cidades" => Cidades::select(["id", "nome"])->get()
         ]);
     }
 }
