@@ -11,7 +11,7 @@ class ProdutosController extends Controller
     public function produtos(){
         return view("/agoraweb/produtos", [
             "produto" => Produtos::all(),
-            "padaria" => Padarias::all()
+            "padaria" => Padarias::select("id", "nome")->get()
         ]);
         
     }
