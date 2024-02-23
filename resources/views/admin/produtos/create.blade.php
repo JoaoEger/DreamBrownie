@@ -18,8 +18,8 @@
                 <input type="text" id="preview" name="preview" class="form-control">
             </div>
             <div class="col col-sm 12 col-md-2 mb-3">
-                <label for="quant">Quantidade</label>
-                <input type="text" id="quant" name="quant" class="form-control">
+                <label for="quantidade">Quantidade</label>
+                <input type="text" id="quantidade" name="quantidade" class="form-control">
             </div>
             <div class="col col-sm 12 col-md-4 mb-3">
                 <label for="image">imagem</label>
@@ -29,7 +29,10 @@
                 <label for="valor">Valor em R$</label>
                 <input type="text" id="valor" name="valor" class="form-control">
             </div>
-
+            <div class="col col-sm 12 col-md-2 mb-3">
+                <label for="estoque">Estoque</label>
+                <input type="text" id="estoque" name="estoque" class="form-control">
+            </div>
             <div class="col col-sm 12 col-md-4 mb-3">
                 <label for="from_padarias">Padaria</label>
                 <select name="from_padarias" id="from_padarias" class="form-select">
@@ -40,10 +43,9 @@
                 </select>
             </div>
 
-            <div class="col col-sm 12 col-md-4 mb-3">
-              <label for="from_padarias">Padaria</label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
-          </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-succes">SALVAR</button>
+            </div>
 
         </div>
     </form>

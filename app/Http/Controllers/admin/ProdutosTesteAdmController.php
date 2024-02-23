@@ -34,7 +34,28 @@ class ProdutosTesteAdmController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $produtos = new Produtos;
+        $produtos->nome = $request->nome;
+        $produtos->preview = $request->preview;
+        $produtos->quantidade = $request->quantidade;
+        $produtos->image = $request->image;
+        $produtos->preview = $request->preview;
+        $produtos->valor = $request->valor;
+        $produtos->estoque = $request->estoque;
+        $produtos->from_padarias = $request->from_padarias;
+        $produtos->date = date("Y-m-d h:i:s");
+
+        //upload da imagem
+        if($request->hasfile("image")&&$request->file("image")->isValid()){
+            $nome = strtotime("now").".".$request->image->extension();
+            $request->image->move(public_path("upload"), $nome);
+            $produtos->image = $nome;
+        }
+        
+        $produtos->save();
+        return redirect("/admin/produtosteste")->
+        with("success","Registro inserido com sucesso.");
+
     }
 
     /**
