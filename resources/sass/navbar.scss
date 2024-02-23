@@ -28,13 +28,16 @@ ul li a.nav-link{
     padding: 0px!important;
     margin: 0!important;
     text-decoration: none;
-    color: black;
+    // color: black;
+    // font-weight: bold;
+
 }
 
 ul li a.btn-nav:hover{
     background-color: #8D5F2E!important;
     color: #FFFDD7!important;
     transition-duration: 500ms;
+    // font-weight: bold;
 /*  list-style: none;
     background: #bfbda1;
     transition-duration: 500ms; */
@@ -45,4 +48,5 @@ ul li a.btn-nav:hover{
     background-color: #8D5F2E!important;
     color: #FFFDD7!important;
     transition-duration: 500ms;
+    // font-weight: bold;
 }

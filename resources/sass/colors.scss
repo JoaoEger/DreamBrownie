@@ -9,9 +9,11 @@ $custom-theme : (
   "chief" : #cf2b30,
   "verdeBosta" : #8db10b,
   "green" : #A9BD96,
+  "darkGreen" : #8E9E7C,
   "bege": #FFFDD7,
   "black": #000000,
-  "primary" : $red-700 
+  "primary" : $red-700,
+  "brown" : #8D5F2E
 );
 
 $theme-colors : map-merge($theme-colors, $custom-theme);
