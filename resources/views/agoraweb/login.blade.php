@@ -16,7 +16,8 @@
                 <img src="logoSemFundo.png" class="login-img mx-auto d-block img-fluid" alt="Não foi possível carregar a imagem">
             </div>
             <div >
-                <form action="">
+                <form action="{{route("login.autenticacao")}}" method="POST">
+                    @csrf
                     <div class="email alinhainput col-md-9">
                         <label for=""class="txt-cor">Email</label>
                         <input type="email" class="form-control" placeholder="Insira seu email aqui">
@@ -27,7 +28,7 @@
                     </div>
                     <div class="alinhalink col-md-9 ">
                         <ul class="">
-                            <li><a class="btn border border-2 border-green btn-login" href="/home">Entrar</a></li>
+                            <li><button class="btn border border-2 border-green btn-login" type="submit">Entrar</button></li>
                             <li><a class="btn border border-2 border-green btn-login" href="/esqueceuSenha">Esqueceu a senha?</a></li>
                             <li><a class="btn border border-2 border-green btn-login" href="/cadastro">Cadastrar-se</a></li>
                         </ul>
