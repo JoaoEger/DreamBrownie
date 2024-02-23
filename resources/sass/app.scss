@@ -1,15 +1,14 @@
 // Fonts
-@import url('https://fonts.bunny.net/css?family=Roboto');
+@import url('https://fonts.bunny.net/css?family=Nunito');
 
 // Variables
 @import 'variables';
-@import 'myconfig.scss';
-@import 'colors.scss';
 
 // Bootstrap
-@import 'colors.scss';
-@import 'login.scss';
-@import 'home.scss';
-
 @import 'bootstrap/scss/bootstrap';
-@import 'navbar.scss';
+@import 'navbar';
+@import 'login';
+@import 'myconfig';
+@import 'colors';
+@import 'home';
+@import 'compraFinalizada';
