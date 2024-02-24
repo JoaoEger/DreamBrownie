@@ -8,8 +8,12 @@
             <div id="emailHelp" class="form-text">Nos nunca divulgaremos seu email para ninguem.</div>
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label bg-">Senha</label>
+            <label for="exampleInputPassword1" class="form-label">Senha</label>
             <input type="password" class="form-control border-primary" id="exampleInputPassword1" placeholder="Digite sua senha aqui">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="exampleCheck1">CEP da Cidade</label>
+            <input type="text" class="form-control border-primary" id="exampleCheck1" placeholder="Adicione o CEP da sua cidade aqui">
         </div>
         <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input border-primary" id="exampleCheck1">

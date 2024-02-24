@@ -19,17 +19,17 @@
                 <form action="{{route("login.autenticacao")}}" method="POST">
                     @csrf
                     <div class="email alinhainput col-md-9">
-                        <label for=""class="txt-cor">Email</label>
-                        <input type="email" class="form-control" placeholder="Insira seu email aqui">
+                        <label for="email" class="txt-cor">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Insira seu email aqui" autofocus required>
                     </div>
                     <div class="senha alinhainput col-md-9">
-                        <label for=""class="txt-cor">Senha</label>
-                        <input type="password" class="form-control" placeholder="Insira seu senha aqui">
+                        <label for="password" class="txt-cor">Senha</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Insira seu senha aqui" required>
                     </div>
                     <div class="alinhalink col-md-9 ">
                         <ul class="">
                             <li><button class="btn border border-2 border-green btn-login" type="submit">Entrar</button></li>
-                            <li><a class="btn border border-2 border-green btn-login" href="/esqueceuSenha">Esqueceu a senha?</a></li>
+                            <li><a class="btn border border-2 border-green btn-login" href="/home">Entrar como convidado</a></li>
                             <li><a class="btn border border-2 border-green btn-login" href="/cadastro">Cadastrar-se</a></li>
                         </ul>
                     </div>

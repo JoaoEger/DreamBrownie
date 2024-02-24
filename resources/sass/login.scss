@@ -21,7 +21,7 @@ ul{
   padding: 0;
 }
 
-ul li a.btn-login{
+ul li .btn-login{
   width: 100%;
   background-color: #def7c7;
   justify-self: center;
@@ -33,7 +33,7 @@ ul li a.btn-login{
   border-radius: 7px;
 }
 
-ul li a.btn-login:hover{
+ul li .btn-login:hover{
   list-style: none;
   background: #ACBD98;
   color: white;
