@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid p-4">
         <h1>Dashboard</h1>
         <p>Bem-vindo ao painel de administração.</p>
         <div class="row">
