@@ -18,6 +18,7 @@
                     <a class="admin-nav-link txt-cor btn-nav" href="/admin/produtos">Produtos</a>
                 </li>
             </ul>
+<<<<<<< HEAD
             {{-- @if (Auth::user()) --}}
             <ul class="btn border-brown p-2 navbar-nav mb-2 align-self-end admin-nav-drop align-self-center">
                 <li class="nav-item dropdown admin-nav-drop">
@@ -30,6 +31,21 @@
                 </li>
             </ul>
         {{-- @endif --}}
+=======
+            @if (Auth::user())
+                <ul class="navbar-nav mb-2 align-self-end">
+                    <li class="nav-item dropdown">
+                        <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Olá
+                            Administrador, seja bem vindo</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="dropdown-item">Perfil</a></li>
+                            <li><a href="" class="dropdown-item">Alterar senha</a></li>
+                            <li><a href="/admin/logout" class="dropdown-item">Sair</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            @endif
+>>>>>>> bb3d76a71c5a3d5b059850248e59f35663b2caa5
         </div>
     </div>
 </nav>

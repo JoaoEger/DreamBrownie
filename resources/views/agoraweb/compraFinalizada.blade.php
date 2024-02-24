@@ -36,7 +36,23 @@
     </div>
     <div class="row">
         <h2 class="text-center mt-5">
-            <a href=""class="btn btn-outline-success btn-lg">Chegou!</a>
+            <a href="#" class="btn btn-outline-success btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Chegou!</a>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Agradecimento do grupo Àgora</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati harum officiis omnis culpa, corrupti blanditiis inventore sit animi earum fugit eius ex praesentium, eos quia voluptatum expedita voluptas aliquid ad!ssss
+                        </div>
+                        <div class="modal-footer">
+                        <a href="/" class="btn btn-outline-danger">Finalizar</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             <button id="open-popup" class="btn btn-outline-danger btn-lg">Não Chegou!</button>
             <div id="popup" style="display: none;">
                 <h6>Entre em contato conosco!</h6>

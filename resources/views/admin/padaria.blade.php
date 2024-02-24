@@ -17,7 +17,7 @@
             <div class="row">
                 <div class="col">
                     <h1>
-                        Cadastrar Um Novo Artigo
+                        sua padaria
                     </h1>
                 </div>
             </div>

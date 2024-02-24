@@ -14,6 +14,14 @@
                     <div class="card-produto" >
                         <h5 class="card-title">{{$p->nome}}</h5>
                         <p class="card-text">{{$p->preview}}</p>
+                        @foreach ($padaria as $pad)
+                        <a href="/padarias/{{$pad->id}}/{{Illuminate\Support\Str::slug($pad->nome)}}">
+                            @if($pad->id == $p->from_padarias)
+                            <small>
+                                {{$pad->nome}}
+                            </small>
+                            @endif
+                        @endforeach</a>
                     </div>
                     <div class="card-action" height="300px">
                         <span class="badge text-bg-success fs-3" width="50px" >R${{$p->valor}}</span>
