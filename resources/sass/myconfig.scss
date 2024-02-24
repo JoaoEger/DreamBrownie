@@ -60,11 +60,11 @@ input::placeholder{
     color: #8D5F2E !important;
 }
 
-.border-brown{
+/* .border-brown{
     border: 8px;
-    border-color: #8D5F2E !important;
+    border-color: #8D5F2E!important;
 
-}
+} */
 .img-balao{
     margin-left: -60px;
 }
@@ -75,5 +75,42 @@ ul li{
     transform: scaleX(-1);
 }
 .sergio-margin{
-    margin-left: 79px;
+    margin-left: 160px;
+}
+
+
+//Carrinho
+.btn-adicionar-carrinho{
+    border: solid #198754;
+    border-radius: 7px;
+    background-color: #198754;
+    color: white;
+}
+.btn-adicionar-carrinho:hover{
+    // border: solid #198754;
+    border-radius: 7px;
+    background-color: #13653f;
+    color: white;
+    font-size: medium;
+}
+.alinha-preco{
+    width: 50px;
+    height: 30px;
+    align-items: center;
+}
+
+
+//Cadastro
+.container-cadastro{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.btn-cadastro{
+    margin-bottom: 2.3px;
+}
+.btn-cadastro:hover{
+    background-color: #714d25;
+    font-size: medium;
+    margin-bottom: 0;
 }

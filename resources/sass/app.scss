@@ -3,13 +3,15 @@
 
 // Variables
 @import 'variables';
+@import 'colors';
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
 @import 'navbar';
 @import 'login';
-@import 'myconfig';
-@import 'colors';
 @import 'home';
 @import 'compraFinalizada';
+@import 'myconfig';
+@import 'admin/navbar';
 @import 'produtos';
+
