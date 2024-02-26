@@ -8,7 +8,7 @@
     <title>Página de Login</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
-<body>
+<body class="body-background">
     <div class="row container-fluid">
         <div class="col-sm-12 col-md-4 bg-cor base">
             <h1 class="titulo txt-cor">Conecte ao ÀgoraWeb</h1>
@@ -42,10 +42,10 @@
                     <img src="fita2.png" class="d-block w-100" alt="">
                 </div>
                   <div class="carousel-item">
-                    <img src="foto.jpeg" class="d-block w-100" alt="">
+                    <img src="foto.jpg" class="d-block w-100" alt="">
                   </div>
                   <div class="carousel-item">
-                    <img src="imagem.jpeg" class="d-block w-100" alt="">
+                    <img src="imagem.jpg" class="d-block w-100" alt="">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">

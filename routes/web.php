@@ -31,11 +31,11 @@ use Illuminate\Validation\Rules\Can;
 Route::post('/login/auth', [LoginController::class, 'authenticate'])->name('login.autenticacao');
 Route::get('/login', [LoginController::class, 'login']);
 Route::get('/', [HomeController::class, 'home'])->middleware("validaCadastro");
+Route::get('/cadastro', [CadastroController::class, 'cadastro']);
 
 Route::middleware("validaCadastro")->group(function (){
   
   Route::get('/home', [HomeController::class, 'home']);
-  Route::get('/cadastro', [CadastroController::class, 'cadastro']);
   
   
   Route::get('/padarias', [PadariaController::class, 'padarias']);
