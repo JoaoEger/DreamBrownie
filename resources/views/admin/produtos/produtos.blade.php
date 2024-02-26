@@ -30,7 +30,7 @@
                         <th>IMAGE</th>
                         <th>ID</th>
                         <th>NOME</th>
-                        <th>PREVIEW</th>
+                        <th>DESCRICAO</th>
                         <th>QUANTIDADE (un)</th>
                         <th>ESTOQUE</th>
                         <th>VALOR (R$)</th>
