@@ -17,7 +17,7 @@ class ValidaCadastro
     public function handle(Request $request, Closure $next): Response
     {
         if(!Auth::check()){
-            // return redirect
+            return redirect("agoraweb/login");
         }
         return $next($request);
     }

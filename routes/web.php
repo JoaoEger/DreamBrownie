@@ -28,20 +28,23 @@ use Illuminate\Validation\Rules\Can;
 |
 */
 
-Route::get('/', [HomeController::class, 'home']);
-Route::get('/home', [HomeController::class, 'home']);
-Route::get('/cadastro', [CadastroController::class, 'cadastro']);
-
-Route::get('/login', [LoginController::class, 'login']);
 Route::post('/login/auth', [LoginController::class, 'authenticate'])->name('login.autenticacao');
+Route::get('/login', [LoginController::class, 'login']);
+Route::get('/', [HomeController::class, 'home'])->middleware("validaCadastro");
 
-Route::get('/padarias', [PadariaController::class, 'padarias']);
-Route::get('/padarias/{id}/{permalink}', [PadariaController::class, 'padaria']);
-Route::get('/produtos', [ProdutosController::class, 'produtos']);
-Route::get('/pagamento', [PagamentoController::class, 'pagamento']);
-Route::get('/compraFinalizada', [CompraFinalizadaController::class, 'compraFinalizada']);
-Route::get('/esqueceuSenha', [EsqueceuSenhaConntroller::class, 'esqueceuSenha']);
-Route::view('/quemsomos', "agoraweb/quemSomos");
+Route::middleware("validaCadastro")->group(function (){
+  
+  Route::get('/home', [HomeController::class, 'home']);
+  Route::get('/cadastro', [CadastroController::class, 'cadastro']);
+  
+  
+  Route::get('/padarias', [PadariaController::class, 'padarias']);
+  Route::get('/padarias/{id}/{permalink}', [PadariaController::class, 'padaria']);
+  Route::get('/produtos', [ProdutosController::class, 'produtos']);
+  Route::get('/pagamento', [PagamentoController::class, 'pagamento']);
+  Route::get('/compraFinalizada', [CompraFinalizadaController::class, 'compraFinalizada']);
+  Route::view('/quemsomos', "agoraweb/quemSomos");
+});
 
 
 //Painel de admin

@@ -18,20 +18,6 @@
                     <a class="admin-nav-link txt-cor btn-nav" href="/admin/produtos">Produtos</a>
                 </li>
             </ul>
-<<<<<<< HEAD
-            {{-- @if (Auth::user()) --}}
-            <ul class="btn border-brown p-2 navbar-nav mb-2 align-self-end admin-nav-drop align-self-center">
-                <li class="nav-item dropdown admin-nav-drop">
-                    <a href="#" class="text-decoration-none text-brown admin-nav-text" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Olá Administrador, seja bem vindo<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/></svg></a>
-                    <ul class="dropdown-menu border border-brown ">
-                        <li><a href="" class="dropdown-item admin-drop-item ">Perfil</a></li>
-                        <li><a href="" class="dropdown-item admin-drop-item ">Alterar senha</a></li>
-                        <li><a href="/admin/logout" class="dropdown-item admin-drop-item ">Sair</a></li>
-                    </ul>
-                </li>
-            </ul>
-        {{-- @endif --}}
-=======
             @if (Auth::user())
                 <ul class="navbar-nav mb-2 align-self-end">
                     <li class="nav-item dropdown">
@@ -45,7 +31,6 @@
                     </li>
                 </ul>
             @endif
->>>>>>> bb3d76a71c5a3d5b059850248e59f35663b2caa5
         </div>
     </div>
 </nav>
