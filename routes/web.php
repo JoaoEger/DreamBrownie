@@ -28,17 +28,23 @@ use Illuminate\Validation\Rules\Can;
 |
 */
 
-Route::get('/', [HomeController::class, 'home']);
-Route::get('/home', [HomeController::class, 'home']);
-Route::get('/cadastro', [CadastroController::class, 'cadastro']);
+Route::post('/login/auth', [LoginController::class, 'authenticate'])->name('login.autenticacao');
 Route::get('/login', [LoginController::class, 'login']);
-Route::get('/padarias', [PadariaController::class, 'padarias']);
-Route::get('/padarias/{id}/{permalink}', [PadariaController::class, 'padaria']);
-Route::get('/produtos', [ProdutosController::class, 'produtos']);
-Route::get('/pagamento', [PagamentoController::class, 'pagamento']);
-Route::get('/compraFinalizada', [CompraFinalizadaController::class, 'compraFinalizada']);
-Route::get('/esqueceuSenha', [EsqueceuSenhaConntroller::class, 'esqueceuSenha']);
-Route::view('/quemsomos', "agoraweb/quemSomos");
+Route::get('/', [HomeController::class, 'home'])->middleware("validaCadastro");
+
+Route::middleware("validaCadastro")->group(function (){
+  
+  Route::get('/home', [HomeController::class, 'home']);
+  Route::get('/cadastro', [CadastroController::class, 'cadastro']);
+  
+  
+  Route::get('/padarias', [PadariaController::class, 'padarias']);
+  Route::get('/padarias/{id}/{permalink}', [PadariaController::class, 'padaria']);
+  Route::get('/produtos', [ProdutosController::class, 'produtos']);
+  Route::get('/pagamento', [PagamentoController::class, 'pagamento']);
+  Route::get('/compraFinalizada', [CompraFinalizadaController::class, 'compraFinalizada']);
+  Route::view('/quemsomos', "agoraweb/quemSomos");
+});
 
 
 //Painel de admin
@@ -49,10 +55,8 @@ Route::post("/admin/auth", [AdminLoginController::class, "auth"])->name("login.a
 Route::middleware("validaLogin")->group(function () {
 
   Route::get("/admin", [DashboardController::class, "index"]);
-  Route::resource("/admin/produtosteste", ProdutosTesteAdmController::class);
+  Route::resource("/admin/produtos", ProdutosTesteAdmController::class);
 
   Route::get("/admin/padaria", [AdmPadariaController::class, "index"]);
-  Route::get("/admin/produtos", [AdmProdutosController::class, "index"]);
-
   Route::get("/admin/logout", [AdminLoginController::class, "logout"]);
 });

@@ -30,6 +30,22 @@
                 </li>
             </ul>
         {{-- @endif --}}
+<<<<<<< HEAD
+=======
+            @if (Auth::user())
+                <ul class="navbar-nav mb-2 align-self-end">
+                    <li class="nav-item dropdown">
+                        <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Olá
+                            Administrador, seja bem vindo</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="dropdown-item">Perfil</a></li>
+                            <li><a href="" class="dropdown-item">Alterar senha</a></li>
+                            <li><a href="/admin/logout" class="dropdown-item">Sair</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            @endif
+>>>>>>> c0938a63cf6fa437a76d900a524266df263aa108
         </div>
     </div>
 </nav>
