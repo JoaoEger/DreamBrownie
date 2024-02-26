@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 class LoginController extends Controller
 {
     public function login(){
-        return view("agoraweb/login");
+        return view("/agoraweb/login");
     }
     public function authenticate(Request $request){
         $credentials = $request->validate([
@@ -27,6 +27,6 @@ class LoginController extends Controller
 
     public function logout(){
         Auth::logout();
-        return redirect("/login");
+        return redirect("/agoraweb/login");
     }
 }
