@@ -7,7 +7,7 @@
         </div>
         <div class="col">
             <div class="d-flex justify-content-end">
-                <a href="{{ route('produtosteste.create') }}" class="btn btn-success">ADICIONAR</a>
+                <a href="{{ route('produtos.create') }}" class="btn btn-success">ADICIONAR</a>
             </div>
         </div>
     </div>
@@ -50,10 +50,10 @@
                             <td>{{ $prod->valor }}</td>
                             <td>{{ date('d/m/Y', strtotime($prod->date)) }}</td>
                             <td>
-                                <a href="{{ route('produtosteste.edit', $prod->id) }}">Editar</a>
+                                <a href="{{ route('produtos.edit', $prod->id) }}">Editar</a>
                                 <a href="#" onclick="deleteRegistro('delete-form')">Deletar</a>
                                 <form id="delete-form" class="d-none"
-                                    action="{{ route('produtosteste.destroy', $prod->id) }}" method="POST">
+                                    action="{{ route('produtos.destroy', $prod->id) }}" method="POST">
                                     @csrf
                                     @method('DELETE')
                                 </form>

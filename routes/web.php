@@ -55,10 +55,8 @@ Route::post("/admin/auth", [AdminLoginController::class, "auth"])->name("login.a
 Route::middleware("validaLogin")->group(function () {
 
   Route::get("/admin", [DashboardController::class, "index"]);
-  Route::resource("/admin/produtosteste", ProdutosTesteAdmController::class);
+  Route::resource("/admin/produtos", ProdutosTesteAdmController::class);
 
   Route::get("/admin/padaria", [AdmPadariaController::class, "index"]);
-  Route::get("/admin/produtos", [AdmProdutosController::class, "index"]);
-
   Route::get("/admin/logout", [AdminLoginController::class, "logout"]);
 });
