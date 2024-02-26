@@ -29,12 +29,8 @@
                     <div class="alinhalink col-md-9 ">
                         <ul class="">
                             <li><button class="btn border border-2 border-green btn-login" type="submit">Entrar</button></li>
-                            <li><a class="btn border border-2 border-green btn-login" href="/home">Entrar como convidado</a></li>
                             <li><a class="btn border border-2 border-green btn-login" href="/cadastro">Cadastrar-se</a></li>
                         </ul>
-                    </div>
-                    <div class="alinhalink">
-                        <a href="/quemsomos" class="qmsomos">Quem somos?</a>
                     </div>
                 </form>
             </div>
