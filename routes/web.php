@@ -34,7 +34,7 @@ Route::get('/', [HomeController::class, 'home'])->middleware("validaCadastro");
 
 Route::middleware("validaCadastro")->group(function (){
   
-  Route::get('/home', [HomeController::class, 'home']);
+  Route::get('/home', [HomeController::class, 'home'])->name("home");
   Route::get('/cadastro', [CadastroController::class, 'cadastro']);
   
   
@@ -53,10 +53,13 @@ Route::post("/admin/auth", [AdminLoginController::class, "auth"])->name("login.a
 
 //middleware-group
 Route::middleware("validaLogin")->group(function () {
+  Route::middleware("checkUserPermission")->group(function(){
 
-  Route::get("/admin", [DashboardController::class, "index"]);
-  Route::resource("/admin/produtos", ProdutosTesteAdmController::class);
-
-  Route::get("/admin/padaria", [AdmPadariaController::class, "index"]);
-  Route::get("/admin/logout", [AdminLoginController::class, "logout"]);
+    
+    Route::get("/admin", [DashboardController::class, "index"]);
+    Route::resource("/admin/produtos", ProdutosTesteAdmController::class);
+    
+    Route::get("/admin/padaria", [AdmPadariaController::class, "index"]);
+    Route::get("/admin/logout", [AdminLoginController::class, "logout"]);
+  });
 });

@@ -41,7 +41,7 @@
                 <tbody>
                     @foreach ($produtos as $prod)
                         <tr>
-                            <td><img src="/upload/{{$prod->image}}" width="120px"></td>
+                            <td><img src="/upload/{{$prod->image}}" width="110px"></td>
                             <td>{{ $prod->id }}</td>
                             <td>{{ $prod->nome }}</td>
                             <td>{{ $prod->preview }}</td>
@@ -50,6 +50,7 @@
                             <td>{{ $prod->valor }}</td>
                             <td>{{ date('d/m/Y', strtotime($prod->date)) }}</td>
                             <td>
+                                @can('permissao', 1)
                                 <a href="{{ route('produtos.edit', $prod->id) }}">Editar</a>
                                 <a href="#" onclick="deleteRegistro('delete-form')">Deletar</a>
                                 <form id="delete-form" class="d-none"
@@ -57,6 +58,7 @@
                                     @csrf
                                     @method('DELETE')
                                 </form>
+                                @endcan
                             </td>
                         </tr>
                     @endforeach
