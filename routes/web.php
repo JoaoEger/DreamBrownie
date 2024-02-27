@@ -66,3 +66,8 @@ Route::middleware("validaLogin")->group(function () {
   });
 });
 
+Route::get('/carrinho', [ProdutosController::class, "index"]);
+Route::post('/cart/add', [CarrinhoController::class,"add"])->name("cart.add");
+Route::post('/cart/remove', [CarrinhoController::class,"remove"])->name("cart.remove");
+Route::get('/cart', [CarrinhoController::class, "index"])->name("cart");
+

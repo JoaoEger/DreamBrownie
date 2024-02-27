@@ -27,4 +27,9 @@ class ProdutosController extends Controller
         ]);
         
     }
+
+    public function index(){
+    $produtos = Produtos::all();
+    return view('agoraweb/produtos', compact('produtos'));
+}
 }
