@@ -16,9 +16,10 @@ class UserSeed extends Seeder
     public function run(): void
     {
         User::create([
-            "name" => "Admin ÀgoraWeb",
-            "email" => "agoraweb@gmail.com",
-            "password" => bcrypt("webagora")
+            "name" => "Thiago",
+            "email" => "thifj@gmail.com",
+            "password" => bcrypt("thiago"),
+            "permission" => 2
         ]);
     }
 }

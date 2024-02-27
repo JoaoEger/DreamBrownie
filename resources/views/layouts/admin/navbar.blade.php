@@ -29,6 +29,21 @@
                     </ul>
                 </li>
             </ul>
+        {{-- @endif --}}
+            @if (Auth::user())
+                <ul class="navbar-nav mb-2 align-self-end">
+                    <li class="nav-item dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="dropdown-item">Perfil</a></li>
+                            <li><a href="" class="dropdown-item">Alterar senha</a></li>
+                            <li><a href="/admin/logout" class="dropdown-item">Sair</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            @endif
+                    </ul>
+                </li>
+            </ul>
         @endif
         </div>
     </div>
