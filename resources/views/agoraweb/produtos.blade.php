@@ -25,7 +25,8 @@
                     </div>
                     <div class="card-action" height="300px">
                         <span class="badge text-bg-success fs-3" width="50px" >R${{$p->valor}}</span>
-                        <a href="/padarias/" class="btn btn-adicionar-carrinho">Adicionar no carrinho</a>
+                        <button  class="btn btn-adicionar-carrinho">Adicionar no carrinho</button>
+                        </form>
                     </div>
                 </div>
             </div>

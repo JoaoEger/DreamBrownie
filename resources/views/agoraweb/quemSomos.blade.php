@@ -19,9 +19,9 @@
             <p class="text-center">Atenciosamente, Equipe Àgora.</p>
         </div>
     </div>
-    <div class="col-md-6 vol-sm-12">
-        <h1 class="text-center ms-5">Integrantes do Àgora</h1>
-        <ul>
+    <div class="col-md-6 vol-sm-12 justify-content-end d-flex">
+        <ul class="justify-content-end align-items-end">
+            <h1 class="text-center ms-5 mb-4">Integrantes do Àgora</h1>
             <li>
                 <h4 class="text-center">Daniel Giraldi Michels</h4>
                 <p class="d-grid gap-2 d-md-flex justify-content-md-end">Redes Sociais:<a href="//www.instagram.com/danielgmichels?igsh=NTcxcnd0cnR4Nm9q&utm_source=qr" class="btn btn-outline-dark">Instagram</a> <a href="//www.linkedin.com/in/daniel-giraldi-michels-ab93262b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="btn btn-outline-dark">LinkedIn</a></p>
@@ -30,9 +30,9 @@
                 <h4 class="text-center">João Arnoldo Eger</h4>
                 <p class="d-grid gap-2 d-md-flex justify-content-md-end">Redes Sociais:<a href="//www.instagram.com/joao_eger/" class="btn btn-outline-dark">Instagram</a> <a href="//www.linkedin.com/in/jo%C3%A3o-eger-16364a2a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn btn-outline-dark">LinkedIn</a></p>
             </li>
-            <li>
+            <li class="justify-self-end align-self-end">
                 <h4 class="text-center">Sérgio Arrazão</h4>
-                <p class="d-grid gap-2 d-md-flex sergio-margin">Redes Sociais:<a href="//www.facebook.com/sergio.arrazao.1?locale=pt_BR" class="btn btn-outline-dark">Facebook</a>
+                <p class="d-grid gap-2 d-md-flex sergio-margin">Redes Sociais:<a href="//www.facebook.com/sergio.arrazao.1?locale=pt_BR" class="btn btn-outline-dark">Facebook</a><a href="//www.facebook.com/sergio.arrazao.1?locale=pt_BR" class="btn"></a>
             </li>
             <li>
                 <h4 class="text-center">Thiago Fernandes Jacques</h4>

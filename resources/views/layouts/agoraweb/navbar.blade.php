@@ -24,6 +24,7 @@
             <form class="d-flex" role="search" method="GET" action="/produtos">
                 <input class="form-control me-2 border-brown focus-ring bg-cor" style="--bs-focus-ring-color: rgba(141, 95, 46, 0.573)" type="search" name="search" value="{{$search}}" placeholder="Buscar produtos" aria-label="Search">
                 <button class="btn border-brown txt-cor btn-buscar-transition"  type="submit">Buscar</button>
+
             </form>
         </div>
     </div>

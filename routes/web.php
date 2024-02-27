@@ -6,6 +6,7 @@ use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\LoginController as AdminLoginController;
 use App\Http\Controllers\admin\ProdutosTesteAdmController;
 use App\Http\Controllers\CadastroController;
+use App\Http\Controllers\CarrinhoController;
 use App\Http\Controllers\CompraFinalizadaController;
 use App\Http\Controllers\EsqueceuSenhaConntroller;
 use App\Http\Controllers\HomeController;
@@ -56,7 +57,7 @@ Route::middleware("validaLogin")->group(function () {
 
   Route::get("/admin", [DashboardController::class, "index"]);
   Route::resource("/admin/produtos", ProdutosTesteAdmController::class);
-
+  
   Route::get("/admin/padaria", [AdmPadariaController::class, "index"]);
   Route::get("/admin/logout", [AdminLoginController::class, "logout"]);
 });
