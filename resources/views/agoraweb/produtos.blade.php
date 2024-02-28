@@ -25,7 +25,11 @@
                     </div>
                     <div class="card-action" height="300px">
                         <span class="badge text-bg-success fs-3" width="50px" >R${{$p->valor}}</span>
-                        <a href="/padarias/" class="btn btn-adicionar-carrinho">Adicionar no carrinho</a>
+                        <form action="{{ route('cart.add') }}" method="POST">
+                            @csrf
+                            <input type="hidden" name="produtoId" value="{{ $p->id }}">
+                            <button type="submit" class="btn btn-adicionar-carrinho">Adicionar ao Carrinho</button>
+                        </form>
                     </div>
                 </div>
             </div>

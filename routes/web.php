@@ -6,6 +6,7 @@ use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\LoginController as AdminLoginController;
 use App\Http\Controllers\admin\ProdutosTesteAdmController;
 use App\Http\Controllers\CadastroController;
+use App\Http\Controllers\CarrinhoController;
 use App\Http\Controllers\CompraFinalizadaController;
 use App\Http\Controllers\EsqueceuSenhaConntroller;
 use App\Http\Controllers\HomeController;
@@ -56,8 +57,7 @@ Route::post("/admin/auth", [AdminLoginController::class, "auth"])->name("login.a
 //middleware-group
 Route::middleware("validaLogin")->group(function () {
   Route::middleware("checkUserPermission")->group(function(){
-
-    
+  
     Route::get("/admin", [DashboardController::class, "index"]);
     Route::resource("/admin/produtos", ProdutosTesteAdmController::class);
     
@@ -65,3 +65,9 @@ Route::middleware("validaLogin")->group(function () {
     Route::get("/admin/logout", [AdminLoginController::class, "logout"]);
   });
 });
+
+Route::get('/carrinho', [ProdutosController::class, "index"]);
+Route::post('/cart/add', [CarrinhoController::class,"add"])->name("cart.add");
+Route::post('/cart/remove', [CarrinhoController::class,"remove"])->name("cart.remove");
+Route::get('/cart', [CarrinhoController::class, "index"])->name("cart");
+
