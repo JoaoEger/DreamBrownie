@@ -12,7 +12,7 @@
         <div class="card mb-3 bg-cor border-success p-1">
             <div class="row g-0 ">
                 <div class="col-md-2">
-                    <img src="{{$p->image}}" class="img-fluid rounded-start" alt="...">
+                    <img src="https://www.sotomano.com/produtos/original/padaria-64736.jpg" class="img-fluid rounded" alt="...">
                 </div>
                 <div class="col-md-9 p-1">
                     <div class="card-produto" >
