@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Padarias;
 use App\Models\Produtos;
 use Illuminate\Http\Request;
 
@@ -31,7 +32,18 @@ class CarrinhoController extends Controller
     }
 
     public function index(){
-    $cart = session()->get('cart', []);
-    return view('agoraweb/carrinho', compact('cart'));
+        $cart = session()->get('cart', []);
+        return view('agoraweb/carrinho', compact('cart'));
     }
+    public function checkout(){
+    $cart = session()->get('cart', []);
+    session()->forget('cart');
+    return view('agoraweb/compraFinalizada', compact('cart'), [
+        "produtos" => Produtos::select('from_padarias')->get(),
+        "padarias" => Padarias::select(["id", "nome"])->get()
+    ]);
+    
+}
+
+    
 }

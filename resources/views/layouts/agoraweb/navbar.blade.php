@@ -17,6 +17,9 @@
                 <li class="nav-item">
                     <a class="nav-link txt-cor btn-nav" href="/produtos">Produtos</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link txt-cor btn-nav" href="/carts">Carrinho</a>
+                </li>
             </ul>
             @php
                 $search = (isset($search)) ? $search : "";

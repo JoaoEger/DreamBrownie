@@ -11,8 +11,8 @@ class CompraFinalizadaController extends Controller
     public function compraFinalizada(){
         return view("/agoraweb/compraFinalizada", [
             "produtos" => Produtos::all(),
-            "padarias" => Padarias::select(["id", "nome"])->get(),
-            "total" => 0    
+            "padarias" => Padarias::select(["id", "nome"])->get()
+            
         ]);
     }
 }

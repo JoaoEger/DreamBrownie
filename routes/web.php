@@ -45,7 +45,6 @@ Route::middleware("validaCadastro")->group(function (){
   Route::get('/padarias/{id}/{permalink}', [PadariaController::class, 'padaria']);
   Route::get('/produtos', [ProdutosController::class, 'produtos']);
   Route::get('/pagamento', [PagamentoController::class, 'pagamento']);
-  Route::get('/compraFinalizada', [CompraFinalizadaController::class, 'compraFinalizada']);
   Route::view('/quemsomos', "agoraweb/quemSomos");
 });
 
@@ -70,4 +69,5 @@ Route::get('/carrinho', [ProdutosController::class, "index"]);
 Route::post('/cart/add', [CarrinhoController::class,"add"])->name("cart.add");
 Route::post('/cart/remove', [CarrinhoController::class,"remove"])->name("cart.remove");
 Route::get('/cart', [CarrinhoController::class, "index"])->name("cart");
+Route::get('/compraFinalizada', [CarrinhoController::class,"checkout"])->name('cart.checkout');
 
