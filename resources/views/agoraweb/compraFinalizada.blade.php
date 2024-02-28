@@ -5,7 +5,7 @@
     
     <div class="row justify-content-center">
         <div class="col-5 align-self-center">
-            <table class="table tabela-background">
+            <table class="table tabela-background shadow">
                 <thead>
                     <tr class="text-center">
                         <th>PRODUTO</th>
