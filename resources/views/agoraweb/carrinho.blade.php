@@ -62,6 +62,7 @@
                     })}}</td>
                 </tr>                 
             </table>
+            <a href="{{ route('cart.checkout') }}" class="btn btn-outline-success">Finalizar Compra</a>
     </div>
 </div>
 

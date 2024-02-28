@@ -48,7 +48,7 @@
             <div id="popup" style="display: none;">
                 <div class="input-group mb-auto">
                     <span class="input-group-text">R$</span>
-                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Troco para?">
                     <span class="input-group-text">.00</span>
                   </div>
                 <button class="btn btn-outline-warning"id="close-popup">Enviar</button>
@@ -78,8 +78,8 @@
     </div>
     <div class="row">
         <h2 class="text-center mt-5">
-            <a href="#" class="btn btn-outline-success btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Chegou!</a>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <a href="#" class="btn btn-outline-success btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModa2">Chegou!</a>
+                <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
