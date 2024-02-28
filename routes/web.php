@@ -44,7 +44,6 @@ Route::middleware("validaCadastro")->group(function (){
   Route::get('/padarias', [PadariaController::class, 'padarias']);
   Route::get('/padarias/{id}/{permalink}', [PadariaController::class, 'padaria']);
   Route::get('/produtos', [ProdutosController::class, 'produtos']);
-  Route::get('/pagamento', [PagamentoController::class, 'pagamento']);
   Route::view('/quemsomos', "agoraweb/quemSomos");
 });
 
@@ -56,7 +55,7 @@ Route::post("/admin/auth", [AdminLoginController::class, "auth"])->name("login.a
 //middleware-group
 Route::middleware("validaLogin")->group(function () {
   Route::middleware("checkUserPermission")->group(function(){
-  
+    
     Route::get("/admin", [DashboardController::class, "index"]);
     Route::resource("/admin/produtos", ProdutosTesteAdmController::class);
     

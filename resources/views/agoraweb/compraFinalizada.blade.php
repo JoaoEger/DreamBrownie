@@ -35,8 +35,47 @@
                 </table>
         </div>
     </div>
-    <ul>
-    </ul>
+    <h1 class="text-center">Método de Pagamento</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-4 col-sm-12 mt-5">
+            <a href="#"><img src="cartao.png" class="img-fluid img-compra"></a>
+            
+        </div>
+        <div class="col-md-4 col-sm-12 mt-5">
+            <button id="open-popup" class="btn">
+                <img src="dinheiro.png" class="img-fluid img-compra">
+            </button>
+            <div id="popup" style="display: none;">
+                <div class="input-group mb-auto">
+                    <span class="input-group-text">R$</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-text">.00</span>
+                  </div>
+                <button class="btn btn-outline-warning"id="close-popup">Enviar</button>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mt-5">
+            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="pix.png" class="img-fluid img-compra"></a>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Chaves PIX</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        121358751356
+                        <img src="insta.png" class="img-fluid">
+                    </div>
+                    <div class="modal-footer">
+                    <a href="/" class="btn btn-outline-danger">Finalizar</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
     <div class="row">
         <h2 class="text-center mt-5">
             <a href="#" class="btn btn-outline-success btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Chegou!</a>

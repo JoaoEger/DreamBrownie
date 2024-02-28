@@ -35,6 +35,7 @@ class CarrinhoController extends Controller
         $cart = session()->get('cart', []);
         return view('agoraweb/carrinho', compact('cart'));
     }
+    
     public function checkout(){
     $cart = session()->get('cart', []);
     session()->forget('cart');
@@ -44,6 +45,5 @@ class CarrinhoController extends Controller
     ]);
     
 }
-
     
 }
