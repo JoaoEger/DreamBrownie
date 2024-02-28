@@ -12,7 +12,7 @@ class CompraFinalizadaController extends Controller
         return view("/agoraweb/compraFinalizada", [
             "produtos" => Produtos::all(),
             "padarias" => Padarias::select(["id", "nome"])->get(),
-            "total" => 0
+            "total" => 0    
         ]);
     }
 }
