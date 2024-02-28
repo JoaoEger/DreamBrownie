@@ -10,30 +10,33 @@
                     <tr class="text-center">
                         <th>PRODUTO</th>
                         <th>PREÇO UNITÁRIO</th>
-                        <th>TOTAL</th>
+                        <th>UNIDADES</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($produtos as $p)
+                    @foreach($cart as $produtoId => $item)
+                    {{-- <li>
+                        {{ $item['nome'] }} - R$ {{ $item['valor'] }} x {{ $item['quantidade'] }}
+                    </li> --}}
                     <tr>
                         <td>
-                            {{$p->nome}} <br>
-                            @foreach($padarias as $pad)
-                        @if($pad->id == $p->from_padarias)
-                            <small>
-                            Da padaria: {{$pad->nome}}
-                            </small>
-                        @endif
-                            @endforeach
+                            {{ $item['nome'] }}
                         </td>
-                        <td>{{$p->valor}}</td>
-                        <td></td>
+                        <td>R$ {{ $item['valor'] }}</td>
+                        <td>{{ $item['quantidade'] }}</td>
                     </tr>
                     @endforeach
-                </tbody>
-            </table>
+                    <tr>
+                        <td colspan="2">Total</td>
+                        <td>R$ {{collect($cart)->sum(function ($item) {
+                            return $item['valor'] * $item['quantidade'];
+                        })}}</td>
+                    </tr>                 
+                </table>
         </div>
     </div>
+    <ul>
+    </ul>
     <div class="row">
         <h2 class="text-center mt-5">
             <a href="#" class="btn btn-outline-success btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Chegou!</a>

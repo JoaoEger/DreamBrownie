@@ -25,7 +25,6 @@ class ProdutosController extends Controller
             "padaria" => Padarias::all(),
             "search"=> $search
         ]);
-        
     }
 
     public function index(){

@@ -21,7 +21,11 @@
                     </div>
                     <div class="card-action">
                         <h2 class="card-text">R${{$p->valor}}</h2>
-                        <a href="/padarias/{{$p->id}}/{{Illuminate\Support\Str::slug($p->nome)}}" class="btn btn-primary">Adicionar no carrinho</a>
+                        <form action="{{ route('cart.add') }}" method="POST">
+                            @csrf
+                            <input type="hidden" name="produtoId" value="{{ $p->id }}">
+                            <button type="submit" class="btn btn-adicionar-carrinho">Adicionar ao Carrinho</button>
+                        </form>
                     </div>
                 </div>
             </div>
