@@ -5,12 +5,11 @@
     
     <div class="row justify-content-center">
         <div class="col-5 align-self-center">
-            <table class="table tabela-background">
+            <table class="table tabela-background shadow">
                 <thead>
                     <tr class="text-center">
                         <th>PRODUTO</th>
                         <th>PREÇO UNITÁRIO</th>
-                        <th>TOTAL</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -26,10 +25,11 @@
                         @endif
                             @endforeach
                         </td>
-                        <td>{{$p->valor}}</td>
-                        <td></td>
+                        <td class="justify-content-center align-items-center {{$total += $p->valor}}">R${{$p->valor}}</td>
                     </tr>
                     @endforeach
+                    <td class="fs-3 total-background">Total</td>
+                    <td class="fs-3 total-background">R${{$total}}</td>
                 </tbody>
             </table>
         </div>
