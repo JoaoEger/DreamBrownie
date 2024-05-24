@@ -19,11 +19,11 @@ class ProdutosFactory extends Factory
         return [
             "nome" => $this->faker->word(),
             "preview" => $this->faker->text(120),
+            "descricao" => $this->faker->text(),
             "quantidade" => rand(0, 50),
             "image" => $this->faker->image(),
             "valor" => rand(0, 20),
             "estoque" => rand(0,1),
-            "from_padarias" => rand(1,10),
             "date" => date("Y-m-d h:i:s")
 
         ];

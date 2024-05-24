@@ -29,23 +29,14 @@ use Illuminate\Validation\Rules\Can;
 |
 */
 
-Route::post('/login/auth', [LoginController::class, 'authenticate'])->name('login.autenticacao');
-Route::get('/login', [LoginController::class, 'login']);
-Route::get('/', [HomeController::class, 'home'])->middleware("validaCadastro");
+Route::get('/', [ProdutosController::class, 'index']);
 Route::get('/cadastro', [CadastroController::class, 'cadastro']);
-
-Route::middleware("validaCadastro")->group(function (){
   
-  Route::get('/home', [HomeController::class, 'home'])->name("home");
   Route::get('/cadastro', [CadastroController::class, 'cadastro']);
-  Route::get('/home', [HomeController::class, 'home']);
   
-  
-  Route::get('/padarias', [PadariaController::class, 'padarias']);
-  Route::get('/padarias/{id}/{permalink}', [PadariaController::class, 'padaria']);
   Route::get('/produtos', [ProdutosController::class, 'produtos']);
-  Route::view('/quemsomos', "agoraweb/quemSomos");
-});
+
+
 
 
 //Painel de admin
@@ -59,7 +50,6 @@ Route::middleware("validaLogin")->group(function () {
     Route::get("/admin", [DashboardController::class, "index"]);
     Route::resource("/admin/produtos", ProdutosTesteAdmController::class);
     
-    Route::get("/admin/padaria", [AdmPadariaController::class, "index"]);
     Route::get("/admin/logout", [AdminLoginController::class, "logout"]);
   });
 });

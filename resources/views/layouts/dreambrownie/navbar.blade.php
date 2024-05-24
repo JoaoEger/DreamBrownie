@@ -1,4 +1,17 @@
-<nav class="navbar navbar-expand-lg bg-cor p-0 shadow">
+<nav class="navbar navbar-expand-lg bege d-flex justify-content-center align-items-center bege-bottom">
+    <div class="logo d-flex justify-content-center align-items-center">
+      <a href="/">
+        <img class="logo rounded float-start" src="logoBrownieMenor.png"alt="">
+      </a>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center">
+      <p class="font azul-font text-center texto-responsivo container">O Melhor Brownie da Cidade!</p>
+      <a class="btn azul-claro azul-claro-hover text-white" href="/cart">
+        <i class="compras bi bi-cart-fill"></i>
+      </a>
+    </div>
+</nav>
+{{-- <nav class="navbar navbar-expand-lg bg-cor p-0 shadow">
     <div class="container-fluid">
         <a class="navbar-brand" href="/home"><img src="{{asset("logoSemFundo.png")}}" 
             alt="Nao foi Possivel carregar a imagem" height="75" width="65"></a>
@@ -10,9 +23,6 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                 <li class="nav-item ">
                     <a class="nav-link active txt-cor btn-nav " aria-current="page" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link txt-cor txt-cor btn-nav" href="/padarias">Padarias</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link txt-cor btn-nav" href="/produtos">Produtos</a>
@@ -31,6 +41,6 @@
             </form>
         </div>
     </div>
-</nav>
+</nav> --}}
 
 {{-- divisao --}}

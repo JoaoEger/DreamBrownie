@@ -18,6 +18,7 @@ class UsuariosFactory extends Factory
     {
         return [
             "nome" => $this->faker->unique()->text(32),
+            "numero" => rand(49998000000, 49999999999),
             "email" => $this->faker->unique()->text(30),
             "senha" => $this->faker->text(9),
             "endereco" => $this->faker->text(12),

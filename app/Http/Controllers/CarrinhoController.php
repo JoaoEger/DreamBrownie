@@ -15,6 +15,7 @@ class CarrinhoController extends Controller
     $cart[$produtoId] = [
         'nome' => $produto->nome,
         'valor' => $produto->valor,
+        'descricao' => $produto->descricao,
         'quantidade' => isset($cart[$produtoId]) ? $cart[$produtoId]['quantidade'] + 1 : 1,
     ];
     session()->put('cart', $cart);
@@ -25,21 +26,24 @@ class CarrinhoController extends Controller
         $produtoId = $request->produtoId;
         $cart = session()->get('cart', []);
         if (isset($cart[$produtoId])) {
-            unset($cart[$produtoId]);
+            $cart[$produtoId]['quantidade']--;
+
+            if ($cart[$produtoId]["quantidade"] <= 0) {
+                unset($cart[$produtoId]);
+            }
             session()->put('cart', $cart);
         }
         return redirect()->route('cart');
     }
-
     public function index(){
         $cart = session()->get('cart', []);
-        return view('agoraweb/carrinho', compact('cart'));
+        return view('dreambrownie/carrinho', compact('cart'));
     }
     
     public function checkout(){
     $cart = session()->get('cart', []);
     session()->forget('cart');
-    return view('agoraweb/compraFinalizada', compact('cart'), [
+    return view('dreambrownie/compraFinalizada', compact('cart'), [
         "produtos" => Produtos::select('from_padarias')->get(),
         "padarias" => Padarias::select(["id", "nome"])->get()
     ]);

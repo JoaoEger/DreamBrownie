@@ -1,4 +1,4 @@
-@extends('layouts.agoraweb.layout')
+@extends('layouts.dreambrownie.layout')
 @section('title', 'Compra Finalizada')
 @section('content')
     <h1 class="text-center">Compra Finalizada com Sucesso!</h1>

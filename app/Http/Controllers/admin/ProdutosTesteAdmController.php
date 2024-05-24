@@ -27,9 +27,7 @@ class ProdutosTesteAdmController extends Controller
      */
     public function create()
     {
-        return view("admin/produtos/create", [
-            "padaria" => Padarias::all(),
-        ]);
+        return view("admin/produtos/create");
     }
 
     /**
@@ -39,13 +37,12 @@ class ProdutosTesteAdmController extends Controller
     {
         $produtos = new Produtos;
         $produtos->nome = $request->nome;
+        $produtos->descricao = $request->descricao;
         $produtos->preview = $request->preview;
         $produtos->quantidade = $request->quantidade;
         $produtos->image = $request->image;
-        $produtos->preview = $request->preview;
         $produtos->valor = $request->valor;
         $produtos->estoque = $request->estoque;
-        $produtos->from_padarias = $request->from_padarias;
         $produtos->date = date("Y-m-d h:i:s");
 
         //upload da imagem

@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string("nome");
             $table->tinyText("preview");
+            $table->text("descricao");
             $table->string("quantidade");
             $table->string("image")->nullable();
             $table->string("valor");

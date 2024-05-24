@@ -30,6 +30,7 @@
                         <th>IMAGE</th>
                         <th>ID</th>
                         <th>NOME</th>
+                        <th>PREVIEW</th>
                         <th>DESCRICAO</th>
                         <th>QUANTIDADE (un)</th>
                         <th>ESTOQUE</th>
@@ -45,6 +46,7 @@
                             <td>{{ $prod->id }}</td>
                             <td>{{ $prod->nome }}</td>
                             <td>{{ $prod->preview }}</td>
+                            <td>{{ $prod->descricao }}</td>
                             <td>{{ $prod->quantidade }}</td>
                             <td>{{ $prod->estoque }}</td>
                             <td>{{ $prod->valor }}</td>

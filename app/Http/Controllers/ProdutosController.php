@@ -20,15 +20,14 @@ class ProdutosController extends Controller
             $produtos = Produtos::paginate(10);
         };
 
-        return view("/agoraweb/produtos", [
+        return view("/dreambrownie/produtos", [
             "produto" => $produtos,
-            "padaria" => Padarias::all(),
             "search"=> $search
         ]);
     }
 
     public function index(){
     $produtos = Produtos::all();
-    return view('agoraweb/produtos', compact('produtos'));
+    return view('dreambrownie/produtos', compact('produtos'));
 }
 }

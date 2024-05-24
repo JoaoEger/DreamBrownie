@@ -13,9 +13,13 @@
                 <label for="nome">Nome</label>
                 <input type="text" id="nome" name="nome" class="form-control">
             </div>
-            <div class="col col-sm 12 col-md-8 mb-3">
-                <label for="preview">Descricao</label>
+            <div class="col col-sm 12 col-md-7 mb-3">
+                <label for="preview">Preview</label>
                 <input type="text" id="preview" name="preview" class="form-control">
+            </div>
+            <div class="col col-sm 12 col-md-8 mb-3">
+                <label for="descricao">Descricao</label>
+                <input type="text" id="descricao" name="descricao" class="form-control">
             </div>
             <div class="col col-sm 12 col-md-2 mb-3">
                 <label for="quantidade">Quantidade (un)</label>
@@ -32,15 +36,6 @@
             <div class="col col-sm 12 col-md-2 mb-3">
                 <label for="estoque">Estoque</label>
                 <input type="text" id="estoque" name="estoque" class="form-control">
-            </div>
-            <div class="col col-sm 12 col-md-4 mb-3">
-                <label for="from_padarias">Padaria</label>
-                <select name="from_padarias" id="from_padarias" class="form-select">
-                    <option value="">Selecione uma padaria</option>
-                    @foreach ($padaria as $pad)
-                        <option value="{{ $pad->id }}">{{ $pad->nome }}</option>
-                    @endforeach
-                </select>
             </div>
 
             <div class="col-12">

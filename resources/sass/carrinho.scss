@@ -1,0 +1,39 @@
+.produto-car{
+    max-width: 20rem;
+}
+@media(min-width: 768px){
+    .produto-car{
+        max-width: 11rem;
+        border-right: 1px solid #d0c6b8
+    }
+}
+.borda-esq{
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid rgb(183, 183, 173);
+}
+.sem-borda{
+    border-radius: 0;
+    border: 1px solid rgb(183, 183, 173);
+}
+.borda-dir{
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid rgb(183, 183, 173);
+}
+.bege{
+    color: black;
+}
+.bege-hover:hover{
+    background-color: #d0c6b8;
+    border: 1px solid rgb(161, 161, 152);
+}
+.azul-bmclaro{
+    background-color: #edf5fe;
+}
+.border-radius{
+    border-radius: 5px;
+    border: 1px solid #76BBC2 !important;
+}

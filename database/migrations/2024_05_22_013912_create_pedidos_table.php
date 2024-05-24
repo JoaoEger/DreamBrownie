@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('padarias', function (Blueprint $table) {
-            $table->text('imagem')->after('telefone');
-            $table->text('descricao')->after('nome');
+        Schema::create('pedidos', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
         });
     }
 
@@ -22,9 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-/*         Schema::table('padarias', function (Blueprint $table) {
-            $table->dropColumn('imagem');
-            $table->dropColumn('descricao');
-        }); */
+        Schema::dropIfExists('pedidos');
     }
 };

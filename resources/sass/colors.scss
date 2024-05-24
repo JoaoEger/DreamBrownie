@@ -13,7 +13,7 @@ $custom-theme : (
   "bege": #FFFDD7,
   "black": #000000,
   "primary" : $red-700,
-  "brown" : #8D5F2E
+  "brown" : #000000
 );
 
 $theme-colors : map-merge($theme-colors, $custom-theme);
